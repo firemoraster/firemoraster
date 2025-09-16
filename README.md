@@ -1,7 +1,7 @@
 <h1 align="center">Привіт! Я firemoraster 👋</h1>
 
 <p align="center">
-  💻 <b>Java & C# Developer</b> | 🤖 Telegram Bot Creator | 🧠 CLI & Backend Enthusiast
+  💻 <b>Java Developer</b> | 🤖 Telegram Bot Creator | 🧠 CLI & Backend Enthusiast
 </p>
 <p align="center">
   🌍 Україна • 🌱 Постійно навчаюсь • 🔧 Люблю створювати щось корисне
