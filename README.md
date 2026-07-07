@@ -39,9 +39,14 @@ to implement the patterns I care about end-to-end, so the whole system runs with
 - **CQRS** — writes go to PostgreSQL with optimistic locking; reads are served from a Redis read model kept up to date by a Kafka consumer.
 - **Idempotent projections**, a scheduled outbox relay, Flyway migrations, OpenAPI, Prometheus/Grafana, and a full Docker stack.
 
-<a href="https://github.com/firemoraster/spaceflow">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=firemoraster&repo=spaceflow&theme=default" alt="SpaceFlow repo"/>
-</a>
+<p>
+  <a href="https://github.com/firemoraster/spaceflow"><img src="https://img.shields.io/badge/Repo-SpaceFlow-181717?logo=github&logoColor=white" alt="SpaceFlow repo"/></a>
+  <img src="https://img.shields.io/github/actions/workflow/status/firemoraster/spaceflow/ci.yml?label=build" alt="build"/>
+  <img src="https://img.shields.io/github/last-commit/firemoraster/spaceflow" alt="last commit"/>
+  <img src="https://img.shields.io/github/languages/top/firemoraster/spaceflow" alt="top language"/>
+</p>
+
+➡️ **[Read the full write-up and architecture diagram →](https://github.com/firemoraster/spaceflow)**
 
 ---
 
@@ -65,11 +70,14 @@ to implement the patterns I care about end-to-end, so the whole system runs with
 
 ---
 
-### 📊 GitHub stats
+### 📊 On GitHub
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=firemoraster&show_icons=true&count_private=true&hide=prs&theme=default" alt="stats"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=firemoraster&layout=compact&langs_count=8&theme=default" alt="top langs"/>
+  <img src="https://img.shields.io/github/followers/firemoraster?label=Followers&style=social" alt="followers"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/Focus-Java%20%2F%20Spring%20Backend-6DB33F" alt="focus"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/Currently-Event--driven%20%26%20CQRS-blue" alt="currently"/>
 </p>
 
 ---
