@@ -1,12 +1,11 @@
-<h1 align="center">Hi, I'm Vitalii 👋</h1>
+<h1 align="center">Vitalii · Java Backend Developer</h1>
+
 <p align="center">
-  <b>Java Backend Developer</b> · Lviv, Ukraine 🇺🇦
+  I turn messy, real-world business processes into <b>backends, bots, and automations that just work.</b>
 </p>
 
 <p align="center">
-  I build backend systems in Java &amp; Spring Boot — and I like getting the hard parts right:
-  <br/>
-  clean architecture, event-driven design, and services that actually hold up under real traffic.
+  🇺🇦 Lviv, Ukraine · came up through tech support, now building the tools I used to wish existed
 </p>
 
 <p align="center">
@@ -16,28 +15,29 @@
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" alt="PostgreSQL"/>
   <img src="https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white" alt="Redis"/>
   <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript"/>
 </p>
 
 ---
 
-### 🧭 About me
+### What I do
 
-- 🎯 Backend developer focused on **Java 17 + Spring Boot 3**, working toward a strong Middle level.
-- 🏗️ I care about **architecture** — hexagonal / clean layering, CQRS, and event-driven patterns done properly rather than as buzzwords.
-- 🤖 I've shipped **real-world Telegram bots** for businesses, so I know what it takes to run something people actually depend on.
-- 📚 Always learning in public — I build in small vertical slices and keep my repos readable.
+**🏗️ Backend systems** — Java 17 & Spring Boot 3, designed properly: hexagonal architecture, CQRS, event-driven flows with Kafka, PostgreSQL/Redis, Docker.
+
+**🤖 Bots & automation** — Telegram bots and integrations that quietly run real businesses: sales intake, multilingual KYC, pricing, support ticketing.
+
+**🛠️ From support to shipping** — I started in tech support / helpdesk. I've felt the pain of manual work, tickets and SLAs first-hand — so I build software that respects the people who have to operate it.
 
 ---
 
-### 🚀 Featured project — SpaceFlow
+### 🚀 Flagship — SpaceFlow
 
-An **event-driven booking backend** for shared spaces (coworking desks, meeting rooms). I built it
-to implement the patterns I care about end-to-end, so the whole system runs with a single
-`docker compose up`.
+An **event-driven booking backend** for shared spaces, built to implement the patterns I care about
+end-to-end. The whole system comes up with a single `docker compose up`.
 
-- **Transactional Outbox** — a booking and its event are written in one DB transaction, then relayed to Kafka (at-least-once, published only after broker ack).
-- **CQRS** — writes go to PostgreSQL with optimistic locking; reads are served from a Redis read model kept up to date by a Kafka consumer.
-- **Idempotent projections**, a scheduled outbox relay, Flyway migrations, OpenAPI, Prometheus/Grafana, and a full Docker stack.
+- **Transactional Outbox** → booking + event committed in one DB transaction, then relayed to Kafka (at-least-once).
+- **CQRS** → writes on PostgreSQL with optimistic locking; reads served from a Redis read model kept in sync by a Kafka consumer.
+- Idempotent projections, Flyway migrations, OpenAPI, Prometheus/Grafana, GitHub Actions CI.
 
 <p>
   <a href="https://github.com/firemoraster/spaceflow"><img src="https://img.shields.io/badge/Repo-SpaceFlow-181717?logo=github&logoColor=white" alt="SpaceFlow repo"/></a>
@@ -46,31 +46,45 @@ to implement the patterns I care about end-to-end, so the whole system runs with
   <img src="https://img.shields.io/github/languages/top/firemoraster/spaceflow" alt="top language"/>
 </p>
 
-➡️ **[Read the full write-up and architecture diagram →](https://github.com/firemoraster/spaceflow)**
+➡️ **[Read the architecture write-up →](https://github.com/firemoraster/spaceflow)**
 
 ---
 
-### 🛠️ Other things I've built
+### 🧩 Selected work
 
-| Project | What it is | Stack |
-|---------|------------|-------|
-| [**Euromet-bot**](https://github.com/firemoraster/Euromet-bot) | Telegram bot for an agribusiness company — order intake, sales and pricing automation | Java, TelegramBots API |
-| [**Kycify**](https://github.com/firemoraster/Kycify) | Multilingual Telegram bot for crypto-exchange KYC services (cart, orders, payments) | Java |
-| [**JavaCorePractice**](https://github.com/firemoraster/JavaCorePractice) · [**LeetCode-practice**](https://github.com/firemoraster/LeetCode-practice) | Ongoing Java core & algorithm practice | Java |
+**Bots & automation for real companies**
+- 🌾 [**Euromet-bot**](https://github.com/firemoraster/Euromet-bot) — Telegram bot for an agribusiness: order intake, sales and price calculation. *(Java)*
+- 🔐 [**Kycify**](https://github.com/firemoraster/Kycify) — multilingual KYC bot for crypto exchanges (Bybit, OKX, Binance…): service cart, orders, payments, rules. *(Java)*
+- 🎫 **helpdesk-bot-mvp** — Telegram ticketing MVP: collect tickets, manage statuses. *(private · JavaScript)*
+
+**Business tools & reporting**
+- 📈 **SAMI-Reports** / **project-sami** — reporting & dashboard tooling. *(private · TypeScript / Vue)*
+- 🌸 [**peony-catalog**](https://github.com/firemoraster/peony-catalog) — e-commerce catalog with an admin panel and drag-and-drop gallery. *(JavaScript)*
+
+**Craft & fundamentals**
+- ☕ [**JavaCorePractice**](https://github.com/firemoraster/JavaCorePractice) · [**LeetCode-practice**](https://github.com/firemoraster/LeetCode-practice) — keeping Java core and algorithms sharp.
+
+---
+
+### 🧭 How I work
+
+- Ship in **small vertical slices**, keep repos readable, commit history clean.
+- Prefer **boring, correct** solutions — reach for complexity only when the problem earns it.
+- **Design for failure**: idempotency, retries and observability from day one, not bolted on later.
+- Having run software in production, I build with the **operator in mind**.
 
 ---
 
 ### 🧰 Tech I work with
 
-**Languages** · Java, SQL, JavaScript, Bash
-**Backend** · Spring Boot (Web, Data JPA, Security, Actuator), REST, OpenAPI
-**Messaging & Data** · Apache Kafka, PostgreSQL, Redis, MongoDB
-**Infra & Tooling** · Docker, docker-compose, GitHub Actions, Git, Maven, Linux (Ubuntu VPS)
-**Practices** · Hexagonal / Clean Architecture, CQRS, Transactional Outbox, Testcontainers
+**Languages** · Java · TypeScript · JavaScript · SQL · Python · Bash
+**Backend** · Spring Boot (Web, Data JPA, Security, Actuator) · REST · OpenAPI · Node.js
+**Messaging & data** · Apache Kafka · PostgreSQL · Redis · MongoDB
+**Frontend touch** · Vue · HTML/CSS/JS
+**Infra & tooling** · Docker · docker-compose · GitHub Actions · Git · Maven · Linux (Ubuntu VPS)
+**Practices** · Hexagonal / Clean Architecture · CQRS · Transactional Outbox · Testcontainers
 
 ---
-
-### 📊 On GitHub
 
 <p align="center">
   <img src="https://img.shields.io/github/followers/firemoraster?label=Followers&style=social" alt="followers"/>
@@ -80,8 +94,6 @@ to implement the patterns I care about end-to-end, so the whole system runs with
   <img src="https://img.shields.io/badge/Currently-Event--driven%20%26%20CQRS-blue" alt="currently"/>
 </p>
 
----
-
 ### 📬 Get in touch
 
 <p align="left">
@@ -90,4 +102,4 @@ to implement the patterns I care about end-to-end, so the whole system runs with
   <a href="https://www.linkedin.com/in/your-profile"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 </p>
 
-<sub>💼 Open to Java backend opportunities — feel free to reach out.</sub>
+<sub>💼 Open to Java backend roles — bots, automations and real-world backends are my comfort zone. Let's talk.</sub>
